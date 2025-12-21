@@ -25,20 +25,22 @@ void Menu::Crawler(States& state){
 
         switch(state.choice){
             case 1: {
-                std::cout << "Root Directory: ";
-                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-                std::getline(std::cin, folder);
+                // std::cout << "Root Directory: ";
+                // std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                // std::getline(std::cin, folder);
                 
-                if (!folder.empty()){
-                    root /= folder;
-                }
+                // if (!folder.empty()){
+                //     root /= folder;
+                // }
                 
-                std::cout << "File Name: ";
-                std::getline(std::cin, filename);
+                // std::cout << "File Name: ";
+                // std::getline(std::cin, filename);
 
-                auto results = crawler.searchFiles(root.string(), filename);
-                state.clearScreen();
-                crawler.listResults(results);
+                // auto results = crawler.searchFiles(root.string(), filename);
+                // state.clearScreen();
+                // crawler.listResults(results);
+
+                system("crawler");
                 break;
             }
             case 2: {
