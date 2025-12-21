@@ -11,10 +11,9 @@ EXCESS = source/Excess.cpp source/ExcessMenu.cpp
 CRAWLER = source/CrawlerMenu.cpp
 ATLAS = source/Atlas.cpp source/AtlasMenu.cpp  
 DOCS = source/Docs.cpp source/DocsMenu.cpp
-CHRONO = source/Chrono.cpp source/ChronoMenu.cpp
 VAULT = source/Vault.cpp source/VaultMenu.cpp
 
-SRC = $(CORE) $(TASKER) $(EXCESS) $(DOCS) $(CRAWLER) $(ATLAS) $(CHRONO) $(VAULT)
+SRC = $(CORE) $(TASKER) $(EXCESS) $(DOCS) $(CRAWLER) $(ATLAS) $(VAULT)
 
 #OBJ = ${SRC:.cpp=.o}
 OBJDIR = build

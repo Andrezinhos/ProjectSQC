@@ -12,11 +12,11 @@ bool list(string dir, string target){
             string path = entry.name;
             if (path.canFind("$Recycle.Bin") || 
                 path.canFind("System Volume Information") ||
-                path.canFind("\\Windows") ||
-                path.canFind("\\Program Files") ||
+                // path.canFind("\\Windows") ||
+                // path.canFind("\\Program Files") ||
                 path.canFind("\\Program Files (x86)") ||
                 path.canFind("\\Recovery") ||
-                path.canFind("\\Arquivos de Programas") ||
+                // path.canFind("\\Arquivos de Programas") ||
                 path.canFind("\\ProgramData")) 
             { 
                 continue;
@@ -33,7 +33,7 @@ bool list(string dir, string target){
             }
         }
     } catch (FileException e) {
-        //writeln("Ignored: ", dir);
+        writeln("Ignored: ", dir);
     }
     return false;
 }

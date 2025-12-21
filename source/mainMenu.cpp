@@ -26,7 +26,6 @@ void MainMenu::Mainface(States& state){
     std::cout << "SQC CRAWLER - crwlr" << "\n";
     std::cout << "SQC ATLAS - atls" << "\n";
     std::cout << "SQC VAULT - vlt" << "\n";
-    std::cout << "SQC CHRONO - crno" << "\n";
     std::cout << "----------------" << "\n";
     std::cout << "SQC DOCS - docs" << "\n";
     std::cout << "----------------" << "\n";
@@ -64,11 +63,6 @@ void MainMenu::Mainface(States& state){
     if (state.name == "vlt"){
         state.clearScreen();
         menu.Vault(state);
-    }
-
-    if (state.name == "crno"){
-        state.clearScreen();
-        menu.Chrono(state);
     }
     
     if (state.name == "docs"){
