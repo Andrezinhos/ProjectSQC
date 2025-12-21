@@ -4,7 +4,6 @@
 #include "states.hpp"
 #include "menu.hpp"
 #include "mainMenu.hpp"
-#include "CrawlerConfig.hpp"
 
 namespace fs = std::filesystem;
 
@@ -15,7 +14,6 @@ void Menu::Crawler(States& state){
         std::cout << "Select a Item:" << "\n";
         std::cout << "1 - Search for file" << "\n";
         std::cout << "2 - Partial search" << "\n";
-        std::cout << "3 - Open App" << "\n";
         std::cout << "0 - return to menu" << "\n"; 
         std::cin >> state.choice;
         
@@ -58,10 +56,6 @@ void Menu::Crawler(States& state){
                 // auto partialResults = crawler.searchFilesPartial(root.string(), filename);
                 // state.clearScreen();
                 // crawler.listResults(partialResults);
-                break;
-            }
-            case 3: {
-                system("launcher");
                 break;
             }
         }

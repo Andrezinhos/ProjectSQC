@@ -1,13 +1,30 @@
 import std.stdio;
 import std.string;
-//import crawler.explorer;
-import crawler.launcher;
+import std.conv;
+import crawler.explorer;
 
 void main() {
-    writeln("Type the file ");
-    string fileName = readln().chomp;
+    writeln("Chose the option:");
+    writeln("launch (1)");
+    writeln("path (2)");
+    string input = readln().chomp;
+    int choice = to!int(input);
     
-    if (!openList("C:\\Program Files", fileName)){
-        writeln("Not find the file");
+    if (choice == 1){
+        writeln("Type the file: ");
+        string fileName = readln().chomp;
+
+        if (!openList("C:\\", fileName)){
+            writeln("Not find the file");
+        }
+    }
+
+    if (choice == 2) {
+        writeln("Type the file: ");
+        string fileName = readln().chomp;
+
+        if (!list("C:\\", fileName)){
+            writeln("Not find the file");
+        }
     }
 }
