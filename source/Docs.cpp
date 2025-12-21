@@ -133,6 +133,8 @@ link: https://github.com/jedisct1/libsodium
 Micro Editor - a terminal editor, write in Go, under the MIT License
 https://github.com/zyedidia/micro
 
+nlohmann/json - for JSON use in C++, under the MIT License
+link: https://github.com/nlohmann/json 
 all rights are reserved for the respective creators of the projects ahead
 	)";
 }

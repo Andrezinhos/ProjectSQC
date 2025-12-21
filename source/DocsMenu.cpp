@@ -52,7 +52,7 @@ void Menu::Doc(States& state){
                 std::cout << "\nType e to return\n";
                 if(docs.toExit()) 
                 break;
-            case 6:
+            case 7:
                 docs.AboutDocs();
                 std::cout << "\nType e to return\n";
                 if(docs.toExit()) 
