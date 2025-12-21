@@ -9,13 +9,13 @@
 namespace fs = std::filesystem;
 
 void Menu::Crawler(States& state){
-    static CrawlerFile crawler;
     while (true)
     {
         std::cout << "\n--- SQC CRAWLER ---\n" << "\n";
         std::cout << "Select a Item:" << "\n";
         std::cout << "1 - Search for file" << "\n";
         std::cout << "2 - Partial search" << "\n";
+        std::cout << "3 - Open App" << "\n";
         std::cout << "0 - return to menu" << "\n"; 
         std::cin >> state.choice;
         
@@ -44,20 +44,24 @@ void Menu::Crawler(States& state){
                 break;
             }
             case 2: {
-                std::cout << "Root Directory: ";
-                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-                std::getline(std::cin, folder);
+                // std::cout << "Root Directory: ";
+                // std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                // std::getline(std::cin, folder);
                 
-                if (!folder.empty()) {
-                    root /= folder;
-                }
+                // if (!folder.empty()) {
+                //     root /= folder;
+                // }
 
-                std::cout << "File Word: ";
-                std::getline(std::cin, filename);
+                // std::cout << "File Word: ";
+                // std::getline(std::cin, filename);
 
-                auto partialResults = crawler.searchFilesPartial(root.string(), filename);
-                state.clearScreen();
-                crawler.listResults(partialResults);
+                // auto partialResults = crawler.searchFilesPartial(root.string(), filename);
+                // state.clearScreen();
+                // crawler.listResults(partialResults);
+                break;
+            }
+            case 3: {
+                system("launcher");
                 break;
             }
         }
