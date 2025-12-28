@@ -9,6 +9,6 @@ public:
     void Crawler(States& state);
     void Atlas(States& state);
     void Vault(States& state);
+    void Monito(States& state);
     void Doc(States& state);
-    void Andes(States& state);
 };

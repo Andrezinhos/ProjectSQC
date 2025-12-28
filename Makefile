@@ -1,4 +1,4 @@
-TARGET = bin/sqc
+TARGET = bin/sco
 
 CXX = g++
 
@@ -12,8 +12,9 @@ CRAWLER = source/CrawlerMenu.cpp
 ATLAS = source/Atlas.cpp source/AtlasMenu.cpp  
 DOCS = source/Docs.cpp source/DocsMenu.cpp
 VAULT = source/Vault.cpp source/VaultMenu.cpp
+MONITOR = source/Monitor.cpp source/MonitorMenu.cpp 
 
-SRC = $(CORE) $(TASKER) $(EXCESS) $(DOCS) $(CRAWLER) $(ATLAS) $(VAULT)
+SRC = $(CORE) $(TASKER) $(EXCESS) $(DOCS) $(CRAWLER) $(ATLAS) $(VAULT) $(MONITOR)
 
 #OBJ = ${SRC:.cpp=.o}
 OBJDIR = build

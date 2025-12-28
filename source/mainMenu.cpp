@@ -21,10 +21,11 @@ void MainMenu::Mainface(States& state){
     std::cout << "=========================\n";
     std::cout << "\nwhat's today work\n";
     std::cout << "----------------\n";
-    std::cout << "SQC TASKER - tskr" << "\n";
-    std::cout << "SQC EXCESS - exs" << "\n";
-    std::cout << "SQC CRAWLER - crwlr" << "\n";
     std::cout << "SQC ATLAS - atls" << "\n";
+    std::cout << "SQC CRAWLER - crwlr" << "\n";
+    std::cout << "SQC EXCESS - exs" << "\n";
+    std::cout << "SQC MONITOR - moni" << "\n";
+    std::cout << "SQC TASKER - tskr" << "\n";
     std::cout << "SQC VAULT - vlt" << "\n";
     std::cout << "----------------" << "\n";
     std::cout << "SQC DOCS - docs" << "\n";
@@ -63,6 +64,11 @@ void MainMenu::Mainface(States& state){
     if (state.name == "vlt"){
         state.clearScreen();
         menu.Vault(state);
+    }
+
+    if (state.name == "moni"){
+        state.clearScreen();
+        menu.Monito(state);
     }
     
     if (state.name == "docs"){
