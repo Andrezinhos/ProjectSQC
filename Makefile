@@ -1,4 +1,4 @@
-TARGET = bin/sco
+TARGET = bin/sqc
 
 CXX = g++
 
