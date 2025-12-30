@@ -7,7 +7,7 @@
 
 void Menu::Atlas(States& state){
     static AtlasList links;
-    const std::string saveLinkPath = "C:/SQC/bin/links.json";
+    const std::string saveLinkPath = "C:/ProjectSQC/bin/data/links.json";
     while (true)
     {
         std::cout << "\n--- SQC ATLAS ---\n" << "\n";

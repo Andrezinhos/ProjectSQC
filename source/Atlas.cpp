@@ -61,7 +61,7 @@ void AtlasList::SaveLink(const std::string& filename) const {
 }
 
 void AtlasList::DelLink(size_t userIndex) {
-    const std::string saveLinkPath = "C:/SQC/bin/data/links.json";
+    const std::string saveLinkPath = "C:/ProjectSQC/bin/data/links.json";
     
     if (userIndex == 0 || userIndex > links.size()){
         std::cout << "Not found Link Number\n";
