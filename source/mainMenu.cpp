@@ -6,7 +6,6 @@
 #include "menu.hpp"
 
 void MainMenu::Mainface(States& state){
-
     Menu menu;
     system("powershell -Command \"$Host.UI.RawUI.BackgroundColor = 'DarkBlue'; Clear-Host\"");
     std::string title = R"( __  __                 _       
@@ -20,7 +19,7 @@ void MainMenu::Mainface(States& state){
     std::cout << "\n=========================\n";
     std::cout << "SQC MOSAIQ KIT\n";
     std::cout << "=========================\n";
-    std::cout << "\nwhat's today work\n";
+    std::cout << "what's today work\n" << "\n";
     std::cout << "----------------\n";
     std::cout << "SQC ATLAS - atls" << "\n";
     std::cout << "SQC CRAWLER - crwlr" << "\n";
