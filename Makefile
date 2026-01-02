@@ -3,7 +3,7 @@ TARGET = bin/sqc
 CXX = g++
 
 CXXFLAGS = -Wall -std=c++17 -Iheaders -Ilibsodium/include
-LDFLAGS = -Llibsodium/include/lib -lsodium -Llibzip/lib -lzip
+LDFLAGS = -Llibsodium/include/lib -lsodium -Llibzip/lib -lzip -Llibarchive/lib -larchive
 
 CORE = source/core.cpp source/mainMenu.cpp
 TASKER = source/TaskerMenu.cpp source/Tasker.cpp

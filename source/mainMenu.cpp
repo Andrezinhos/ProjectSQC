@@ -9,15 +9,17 @@ void MainMenu::Mainface(States& state){
 
     Menu menu;
     system("powershell -Command \"$Host.UI.RawUI.BackgroundColor = 'DarkBlue'; Clear-Host\"");
-    std::string title = R"( ____    ___    ____ 
-/ ___|  / _ \  / ___|
-\(___  | | | | ||   
- ___)\ | |_| | ||___ 
-|____/  \__\_\ \____| 
+    std::string title = R"( 
+ __  __                 _       
+|  \/  | ___  ___  __ _(_) __ _ 
+| |\/| |/ _ \/ __|/ _` | |/ _` |
+| |  | | (_) \__ \ (_| | | (_| |
+|_|  |_|\___/|___/\__,_|_|\__, |
+                             |_|
 )";
     std::cout << title;
     std::cout << "\n=========================\n";
-    std::cout << "SEQUENCE MANAGER KIT\n";
+    std::cout << "SQC MOSAIQ KIT\n";
     std::cout << "=========================\n";
     std::cout << "\nwhat's today work\n";
     std::cout << "----------------\n";

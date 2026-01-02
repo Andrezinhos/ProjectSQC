@@ -8,12 +8,10 @@
 States state;
 
 int main(int argc, char* argv[]) {
-
     MainMenu mainFace;
-
     if (argc > 1){
         std::string arg = argv[1];
-        if (arg == "--version") {
+        if (arg == "--version" || arg == "-v") {
                 std::string title = R"(  ___  _  __
  / _ \| |/ /
 | | | |   / 
@@ -21,7 +19,7 @@ int main(int argc, char* argv[]) {
  \___/|_|\_\
 )";
             std::cout << title << "\n";
-            std::cout << "SQC v0.14.0 - SEQUENCE MANAGER KIT\n";
+            std::cout << "SQC v0.14.2 - SQC MOSAIQ KIT\n";
             return 0;
         }
         if (arg == "init"){
@@ -31,16 +29,9 @@ int main(int argc, char* argv[]) {
                 mainFace.Mainface(state);
             }
         }
-        if (arg == "mail"){
-            int ret = std::system("alpine");
-            if (ret == -1){
-                std::cout << "Not installed Alpine";
-            }
-            return 0;
-        }
         if (arg == "help"){
             std::cout << "\nsqc init = starts the software\n";
-            std::cout << "\nsqc --version = see the actual version and if is installed\n";
+            std::cout << "\nsqc --version | -v = see the actual version and if is installed\n";
             std::cout << "\nsqc help = to see the commands of SQC\n";
             std::cout << "\nsqc editor = open the Micro Editor, that works with code files and text files\n\n";
             return 0;
