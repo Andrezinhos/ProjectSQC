@@ -25,6 +25,7 @@ void MainMenu::Mainface(States& state){
     std::cout << "SQC CRAWLER - crwlr" << "\n";
     std::cout << "SQC EXCESS - exs" << "\n";
     std::cout << "SQC MONITOR - moni" << "\n";
+    std::cout << "SQC SMASHER - smsh" << "\n";
     std::cout << "SQC TASKER - tskr" << "\n";
     std::cout << "SQC VAULT - vlt" << "\n";
     std::cout << "----------------" << "\n";
@@ -69,6 +70,11 @@ void MainMenu::Mainface(States& state){
     if (state.name == "moni"){
         state.clearScreen();
         menu.Monito(state);
+    }
+
+    if (state.name == "smsh"){
+        state.clearScreen();
+        menu.Smasher(state);
     }
     
     if (state.name == "docs"){

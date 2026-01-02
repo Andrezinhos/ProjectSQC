@@ -10,5 +10,6 @@ public:
     void Atlas(States& state);
     void Vault(States& state);
     void Monito(States& state);
+    void Smasher(States& state);
     void Doc(States& state);
 };

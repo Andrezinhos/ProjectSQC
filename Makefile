@@ -3,7 +3,7 @@ TARGET = bin/sqc
 CXX = g++
 
 CXXFLAGS = -Wall -std=c++17 -Iheaders -Ilibsodium/include
-LDFLAGS = -Llibsodium/include/lib -lsodium
+LDFLAGS = -Llibsodium/include/lib -lsodium -Llibzip/lib -lzip
 
 CORE = source/core.cpp source/mainMenu.cpp
 TASKER = source/TaskerMenu.cpp source/Tasker.cpp
@@ -12,9 +12,10 @@ CRAWLER = source/CrawlerMenu.cpp
 ATLAS = source/Atlas.cpp source/AtlasMenu.cpp  
 DOCS = source/Docs.cpp source/DocsMenu.cpp
 VAULT = source/Vault.cpp source/VaultMenu.cpp
-MONITOR = source/Monitor.cpp source/MonitorMenu.cpp 
+MONITOR = source/Monitor.cpp source/MonitorMenu.cpp
+SMASH = source/Smash.cpp source/SmashMenu.cpp
 
-SRC = $(CORE) $(TASKER) $(EXCESS) $(DOCS) $(CRAWLER) $(ATLAS) $(VAULT) $(MONITOR)
+SRC = $(CORE) $(TASKER) $(EXCESS) $(DOCS) $(CRAWLER) $(ATLAS) $(VAULT) $(MONITOR) $(SMASH)
 
 #OBJ = ${SRC:.cpp=.o}
 OBJDIR = build

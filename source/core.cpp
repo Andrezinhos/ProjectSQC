@@ -21,7 +21,7 @@ int main(int argc, char* argv[]) {
  \___/|_|\_\
 )";
             std::cout << title << "\n";
-            std::cout << "SQC v0.13.2 - SEQUENCE MANAGER KIT\n";
+            std::cout << "SQC v0.14.0 - SEQUENCE MANAGER KIT\n";
             return 0;
         }
         if (arg == "init"){
