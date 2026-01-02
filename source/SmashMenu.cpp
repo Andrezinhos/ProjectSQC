@@ -54,7 +54,7 @@ void typeExtr(std::string file, std::string entry, std::string out) {
 void Menu::Smasher(States& state){
     while (true)
     {
-        std::cout << "\n--- SQC SMASHER ---\n" << "\n";
+        std::cout << "\n--- SQC CRUSHER ---\n" << "\n";
         std::cout << "Select a Item:" << "\n";
         std::cout << "1 - Compact file" << "\n";
         std::cout << "2 - Extract File" << "\n";

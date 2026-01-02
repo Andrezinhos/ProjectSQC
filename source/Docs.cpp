@@ -59,6 +59,12 @@ to search for a specific file type 1 (Search File)
 then you write the Root you want to start
 and the File Name on the Root you specified 
 then it will return the path of the file
+
+you could launch softwares by selecting the option launch
+type the name of the software
+and then the Crawler will look for and them open
+for some specific softwares may not open for the level of restriction
+of the folder where is located
 )";
 }
 
@@ -99,12 +105,47 @@ check the source code in this link:
 https://github.com/jedisct1/libsodium
 )";
 }
+
+void Docs::MonitorDocs(){
+    std::cout << "\n";
+    std::cout << R"(
+SQC MONITOR
+Is a Task Manager 
+and is embedded with the Mosaiq Core
+it takes a snapshot of the process of the computer
+and then shows a list of all the process in the moment
+
+you can add a PID (a Process ID) to only see the process in the moment
+and you can kill a process you want by tiping his PID
+)";
+}
+
+void Docs::CrusherDocs(){
+    std::cout << "\n";
+    std::cout << R"(
+SQC CRUSHER
+Is a File Compactor and Descompactor 
+it supports the ZIP an TAR compression types
+but it could be extended
+
+you compress a file by typing the name or path
+of the file you want to compress
+then select a compression type for it
+and then the name of the compressed folder
+
+for descompressing is the same process
+you type the compressed folder
+then the compression type of the folder
+and the name of the folder after descompression
+)";
+}
+
 void Docs::EditorDocs(){
     std::cout << "\n";
     std::cout << R"(
 Micro Editor
 Is a text and code editor
-and is embedded with the SQC Core
+and is embedded with the Mosaiq Core
 to access it just type 'sqc editor' and the micro editor will open
 is simple to use and looks almost like the Neovim
 to see the commands just check the help function on the editor itself
@@ -134,7 +175,11 @@ Micro Editor - a terminal editor, write in Go, under the MIT License
 https://github.com/zyedidia/micro
 
 nlohmann/json - for JSON use in C++, under the MIT License
-link: https://github.com/nlohmann/json 
+link: https://github.com/nlohmann/json
+
+libarchive - for the file compactation, under the 2 Clause BSD License
+link: https://github.com/libarchive/libarchive 
+
 all rights are reserved for the respective creators of the projects ahead
 	)";
 }

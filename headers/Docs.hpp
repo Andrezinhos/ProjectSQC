@@ -9,5 +9,7 @@ public:
     void CrawlerDocs();
     void VaultDocs();
     void AtlasDocs();
+    void MonitorDocs();
+    void CrusherDocs();
     void AboutDocs();
 };
